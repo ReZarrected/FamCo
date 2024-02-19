@@ -1,13 +1,13 @@
-import { auth } from "@/auth";
-import UserAvatar from "@/components/UserAvatar";
-import { PostWithExtras } from "@/lib/definitions";
-import Image from "next/image";
-import Link from "next/link";
-import Comments from "./Comments";
-import Timestamp from "./Timestamp";
-import { Card } from "./ui/card";
-import PostOptions from "./PostOptions";
-import PostActions from "./PostActions";
+import { auth } from '@/auth';
+import UserAvatar from '@/components/UserAvatar';
+import { PostWithExtras } from '@/lib/definitions';
+import Image from 'next/image';
+import Link from 'next/link';
+import Comments from './Comments';
+import Timestamp from './Timestamp';
+import { Card } from './ui/card';
+import PostOptions from './PostOptions';
+import PostActions from './PostActions';
 
 async function Post({ post }: { post: PostWithExtras }) {
   const session = await auth();
@@ -34,7 +34,7 @@ async function Post({ post }: { post: PostWithExtras }) {
               <Timestamp createdAt={post.createdAt} />
             </p>
             <p className="text-xs text-black dark:text-white font-medium">
-              Dubai, United Arab Emirates
+              My location
             </p>
           </div>
         </div>
